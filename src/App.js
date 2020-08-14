@@ -5,7 +5,7 @@ import { GifGrid } from './components/GifGrid'
 
 export const App = () => {
 
-  const [categories, setCategories] = useState(['leagueoflegends']);
+  const [categories, setCategories] = useState(['homero']);
 
   
   return (
