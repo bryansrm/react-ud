@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 export const AddCategory = ({ setCategories }) => {
-    const [inputValue, setInputValue] = useState('init')
+    const [inputValue, setInputValue] = useState('')
 
     const handleInputChange = (e) => {
         var value = e.target.value;
@@ -19,7 +19,6 @@ export const AddCategory = ({ setCategories }) => {
 
     return (
         <>
-        <h1>{inputValue}</h1>
         <form onSubmit={(event) => handleSubmitForm(event)}>
             <input 
                 type="text" 
