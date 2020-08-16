@@ -13,13 +13,13 @@ export const App = () => {
       <h2>Giff Expert App</h2>
       <AddCategory setCategories={setCategories}/>
       {
-        <ul>
+        <div>
           {
             categories.map( category => (
               <GifGrid key={category} category={category} />
             ))
           }
-        </ul>
+        </div>
       }
     </div>
   );

@@ -9,12 +9,14 @@ export const GifGrid = ({category }) => {
     return (
         <>
             <h3>{category}</h3>
-            { loading && <p>Loading ...</p>}
+            { loading && <p className="animate__animated animate__fadeInDown">Loading ...</p>}
+            <div className="content_gifs">
             {
                 image.map( gif => (
                     <GifGridItem key={gif.id} gif={gif} />
                 ))
             }
+            </div>
         </>
     )
 }
